@@ -1,11 +1,18 @@
-# Simple Spec reporter for jest [![Build Status](https://travis-ci.org/pierreroth64/jest-spec-reporter.svg?branch=master)](https://travis-ci.org/pierreroth64/jest-spec-reporter) [![npm version](https://badge.fury.io/js/jest-spec-reporter.svg)](https://badge.fury.io/js/jest-spec-reporter) [![npm downloads](https://img.shields.io/npm/dm/jest-spec-reporter.svg?style=flat-square)](https://www.npmjs.com/package/jest-spec-reporter) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+# Jest reporter with Mocha spec style logging
+
+This is a fork of [peio](https://github.com/pierreroth64)'s
+[jest-spec-reporter](https://github.com/pierreroth64/jest-spec-reporter#readme), tweaking it to look like Mocha's spec reporter.
+
+Here is the output of `npm run example`:
+
+<img src="example/screenshot.png" />
 
 ## Installation
 
 You may install this package as a development dependency:
 
 ```bash
-npm install --save-dev jest-spec-reporter
+npm install --save-dev jest-mocha-spec-reporter
 ```
 
 ## Configuration
@@ -18,15 +25,6 @@ For example, create a `jest.config.js` file containing:
 module.exports = {
   verbose: false,
   testPathIgnorePatterns: ["/node_modules/"],
-  reporters: ["jest-spec-reporter"]
+  reporters: ["jest-mocha-spec-reporter"]
 };
-```
-
-You can checkout the expected output:
-
-```bash
-git clone https://github.com/pierreroth64/jest-spec-reporter.git
-cd jest-spec-reporter
-npm install
-npm run example
 ```

@@ -1,7 +1,7 @@
 {
-  "name": "jest-spec-reporter",
+  "name": "jest-mocha-spec-reporter",
   "version": "1.0.17",
-  "description": "Simple Spec reporter for Jest",
+  "description": "Jest reporter with Mocha spec style logging.",
   "main": "./lib/index.js",
   "directories": {
     "lib": "lib"
@@ -17,19 +17,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pierreroth64/jest-spec-reporter.git"
+    "url": "git+https://github.com/markandre13/jest-mocha-spec-reporter.git"
   },
   "keywords": [
     "jest",
     "spec",
     "reporter"
   ],
-  "author": "Peio Roth",
+  "author": "Mark-André Hopf",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pierreroth64/jest-spec-reporter/issues"
-  },
-  "homepage": "https://github.com/pierreroth64/jest-spec-reporter#readme",
+  "homepage": "https://github.com/markandre13/jest-mocha-spec-reporter#readme",
   "dependencies": {
     "chalk": "4.1.1",
     "moment": "2.29.1"
